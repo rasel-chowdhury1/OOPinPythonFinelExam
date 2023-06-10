@@ -110,20 +110,7 @@ class User:
             print(f'You can\'t take loan from bank to {amount}.you can take highest loan is {twice_amount}')
                 
             
-    def bank_show(self):
-        print('bank total balance is : ',self.bank.total_balance)
 
-
-    def show_users(self):
-    
-        for user in self.store_users:
-            for use in self.store_users[user]:
-                if use == 'email':
-                    print(f'email : {self.store_users[user][use]} ,',end=' ')
-                elif use == 'password':
-                    print(f'password : {self.store_users[user][use]} ,',end=' ')
-                else:
-                    print(f'balance : {self.store_users[user][use]}')
 
 class Admin:
     store_admin = {}
