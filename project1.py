@@ -11,7 +11,6 @@ class Bank:
     def given_loan(self,amount):
         if self.loan_feature_enabled:
             if amount < self.total_balance:
-                self.total_balance -= amount
                 self.total_loan_amount += amount
                 return True
         else:
@@ -109,8 +108,7 @@ class User:
         else:
             print(f'You can\'t take loan from bank to {amount}.you can take highest loan is {twice_amount}')
                 
-            
-
+     
 
 class Admin:
     store_admin = {}
